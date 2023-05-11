@@ -1,6 +1,6 @@
 # Backend I
 
-Este repositório contém o código-fonte desenvolvido durante o curso Backend I da plataforma XYZ. O curso tem como objetivo ensinar os conceitos básicos de programação em Java, com foco no desenvolvimento de sistemas backend.
+Este repositório contém o código-fonte desenvolvido durante o curso Backend I da plataforma Digital House. O curso tem como objetivo ensinar programação em Java, com foco no desenvolvimento de sistemas backend usando frameworks.
 
 ## Tecnologias utilizadas
 
