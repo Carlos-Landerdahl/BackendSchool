@@ -5,7 +5,7 @@ import services.GradeFilmesProxy;
 public class Main {
     public static void main(String[] args){
         GradeFilmesProxy proxy = new GradeFilmesProxy();
-        
+
         Filme f1 = new Filme("Longe de casa", 49);
         Filme f2 = new Filme("Batman", 130);
         Filme f3 = new Filme("Barbie", 51);
