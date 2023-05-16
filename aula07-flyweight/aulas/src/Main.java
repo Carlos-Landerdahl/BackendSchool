@@ -20,7 +20,7 @@ public class Main {
         // totalMemory = memoria total
         // freeMemory = memoria livre
         // 1024 * 1024 = transforma bytes em megabytes (leitura melhor)
-        //final = resultado de memoria usada pela maquina em megabytes
+        // final = resultado de memoria usada pela maquina em megabytes
         System.out.println("Memória utilizada: "+ (runtime.totalMemory() - runtime.freeMemory()) / (1024 * 1024));
     }
 }
