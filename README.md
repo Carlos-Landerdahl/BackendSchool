@@ -6,7 +6,7 @@ Este repositório contém o código-fonte desenvolvido durante o curso Backend I
 
 Durante o curso, foram utilizadas as seguintes tecnologias:
 
-- Java 11
+- Java 
 - Spring Framework
 - Spring Boot
 - Spring Data JPA
