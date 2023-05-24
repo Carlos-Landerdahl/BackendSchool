@@ -37,9 +37,9 @@ public class PacienteDao implements IDao<Paciente> {
                 paciente.getEndereco().getId()
                 );
         try {
-           statement = connection.createStatement();
-           statement.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
-           ResultSet generatedKeys = statement.getGeneratedKeys();
+            statement = connection.createStatement();
+            statement.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
+            ResultSet generatedKeys = statement.getGeneratedKeys();
 
             if(generatedKeys.next()){
                 paciente.setId(generatedKeys.getInt(1));
@@ -49,6 +49,21 @@ public class PacienteDao implements IDao<Paciente> {
             }
         } catch (SQLException e){
             e.printStackTrace();
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
         }
         return paciente;
     }
