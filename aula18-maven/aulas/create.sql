@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS Filiais;
+CREATE TABLE Filiais (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nomeFilial VARCHAR(255) NOT NULL,
+    rua VARCHAR(255) NOT NULL,
+    numero INT NOT NULL,
+    cidade VARCHAR(255) NOT NULL,
+    estado VARCHAR(255) NOT NULL,
+    cincoEstrelas BOOLEAN NOT NULL
+);
