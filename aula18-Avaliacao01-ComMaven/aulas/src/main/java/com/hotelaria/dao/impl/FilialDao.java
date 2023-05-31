@@ -42,8 +42,8 @@ public class FilialDao implements IDao<FilialHotel> {
 
             if(keys.next()) {
                 filialHotel.setId(keys.getInt(1));
-                log.info("Filial registrada com sucesso: " + filialHotel.toString());
             }
+            log.info("Filial registrada com sucesso: " + filialHotel.toString());
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
